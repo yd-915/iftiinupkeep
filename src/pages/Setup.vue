@@ -3,14 +3,14 @@
         <div class="form">
             <form @submit.prevent="submit">
                 <div>
-                    <object width="64" height="64" data="/icon.svg" />
+                    <object width="64" height="64" data="/time.png" />
                     <div style="font-size: 28px; font-weight: bold; margin-top: 5px;">
                         Iftiin Uptime
                     </div>
                 </div>
 
                 <p class="mt-3">
-                    {{ $t("Create your admin account") }}
+                    {{ $t("Set up your admin account") }}
                 </p>
 
                 <div class="form-floating">
