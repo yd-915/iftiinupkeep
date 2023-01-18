@@ -103,7 +103,21 @@
                         required
                     />
                     <label class="form-check-label" :for="'status-page-' + statusPage.id">
-                        {{ $t("Status Page") }} - {{ statusPage.title }}
+                        {{ $t("Status Notes") }} - {{ statusPage.title }}
+                    </label>
+                </div>
+                <div v-for="statusPage in $root.statusPageList" :key="statusPage.id" class="form-check">
+                    <input
+                        :id="'status-page-' + statusPage.id"
+                        v-model="settings.entryPage"
+                        class="form-check-input"
+                        type="radio"
+                        name="entryPage"
+                        :value="'statusPage-' + statusPage.slug"
+                        required
+                    />
+                    <label class="form-check-label" :for="'status-page-' + statusPage.id">
+                        {{ $t("Pro Version") }} - {{ statusPage.title }}
                     </label>
                 </div>
             </div>
@@ -125,7 +139,7 @@
                         autocomplete="new-password"
                     />
                     <button class="btn btn-outline-primary" type="button" @click="autoGetPrimaryBaseURL">
-                        {{ $t("Auto Get") }}
+                        {{ $t("Get") }}
                     </button>
                 </div>
 
