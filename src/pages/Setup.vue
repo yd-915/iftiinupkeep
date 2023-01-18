@@ -3,7 +3,7 @@
         <div class="form">
             <form @submit.prevent="submit">
                 <div>
-                    <object width="64" height="64" data="/time.png" />
+                    <object width="64" height="64" data="/time.svg" />
                     <div style="font-size: 28px; font-weight: bold; margin-top: 5px;">
                         Iftiin Uptime
                     </div>
