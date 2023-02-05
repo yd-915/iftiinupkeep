@@ -33,9 +33,7 @@
                 <button class="w-100 btn btn-primary" type="submit" :disabled="processing">
                     {{ $t("Login") }}
                 </button>
-                  <button class="w-100 btn btn-primary" type="submit" onclick="window.location.href='https://iftiinupkeep-production.up.railway.app/setup';" :disabled="processing">
-                    {{ $t("Sign up") }}
-                </button>
+                
                 <div v-if="res && !res.ok" class="alert alert-danger mt-3" role="alert">
                     {{ res.msg }}
                 </div>
