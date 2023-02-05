@@ -21,11 +21,7 @@
             </a>
 
             <ul class="nav nav-pills">
-                <li v-if="$root.loggedIn" class="nav-item me-2">
-                    <router-link to="/manage-status-page" class="nav-link">
-                        <font-awesome-icon icon="up-arrow" /> {{ $t("Pro Version") }}
-                    </router-link>
-                </li>
+              
                 <li v-if="$root.loggedIn" class="nav-item me-2">
                     <router-link to="/manage-status-page" class="nav-link">
                         <font-awesome-icon icon="note-sticky" /> {{ $t("Status Notes") }}
