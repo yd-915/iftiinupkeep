@@ -41,9 +41,7 @@
                     {{ $t("Sign up") }}
                 </button>
                 
-                 <button class="w-100 btn btn-primary mt-3" type="submit" :disabled="processing" onclick="window.location.href='https://iftiinupkeep-production.up.railway.app/dashboard';" data-cy="submit-setup-form">
-                    {{ $t("Sign in") }}
-                </button>
+              
             </form>
         </div>
     </div>
