@@ -21,7 +21,12 @@
             </a>
 
             <ul class="nav nav-pills">
-              
+                <li v-if="$root.loggedIn" class="nav-item me-2">
+                    <router-link to="https://www.iftiinhub.pro/" class="nav-link">
+                        <font-awesome-icon icon="note-sticky" /> {{ $t("HOME") }}
+                    </router-link>
+                </li>
+                
                 <li v-if="$root.loggedIn" class="nav-item me-2">
                     <router-link to="/manage-status-page" class="nav-link">
                         <font-awesome-icon icon="note-sticky" /> {{ $t("Status Notes") }}
