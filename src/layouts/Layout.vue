@@ -22,7 +22,7 @@
 
             <ul class="nav nav-pills">
             <a href="https://www.iftiinhub.pro/">
-                <li v-if="$root.loggedIn" class="nav-item me-2">
+                <li v-if="$root.loggedIn" class="nav-link">
                     <font-awesome-icon icon="note-sticky" /> {{ $t("HOME") }}  
                 </li>
                 </a>
