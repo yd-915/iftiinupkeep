@@ -3,12 +3,10 @@
         <div class="form">
             <form @submit.prevent="submit">
                 <div>
-                   <a href="">
                     <object width="64" height="64" data="/time.png" />
                     <div style="font-size: 28px; font-weight: bold; margin-top: 5px;">
                         Iftiin Uptime
                     </div>
-                    </a>
                 </div>
              
                 <p class="mt-3">
@@ -42,7 +40,9 @@
                 <button class="w-100 btn btn-primary mt-3" type="submit" :disabled="processing" data-cy="submit-setup-form">
                     {{ $t("Sign up") }}
                 </button>
-                
+                <a href="https://www.iftiinhub.pro/homepage" class="w-100 btn btn-primary mt-3" type="submit" :disabled="processing" data-cy="submit-setup-form">
+                    {{ $t("Home") }}
+                </a>
               
             </form>
         </div>
