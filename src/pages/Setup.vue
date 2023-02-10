@@ -40,6 +40,9 @@
                 <button class="w-100 btn btn-primary mt-3" type="submit" :disabled="processing" data-cy="submit-setup-form">
                     {{ $t("Sign up") }}
                 </button>
+                  <a href="https://iftiinupkeep.live/dashboard" class="w-100 btn btn-primary mt-3" type="submit" :disabled="processing" data-cy="submit-setup-form">
+                    {{ $t("Sign In") }}
+                </a>
                 <a href="https://www.iftiinhub.pro/homepage" class="w-100 btn btn-primary mt-3" type="submit" :disabled="processing" data-cy="submit-setup-form">
                     {{ $t("Home") }}
                 </a>
