@@ -33,9 +33,13 @@
                 <button class="w-100 btn btn-primary" type="submit" :disabled="processing">
                     {{ $t("Login") }}
                 </button>
-                <button class="w-100 btn btn-primary" type="submit" :disabled="processing">
-                    {{ $t("Sign Up") }}
-                </button>
+                <a href="https://www.iftiinupkeep.live/setup" class="w-100 btn btn-primary mt-3" type="submit" :disabled="processing" data-cy="submit-setup-form">
+                    {{ $t("Sign up") }}
+                </a>
+              
+                <a href="https://www.iftiinhub.pro/homepage" class="w-100 btn btn-primary mt-3" type="submit" :disabled="processing" data-cy="submit-setup-form">
+                    {{ $t("Home") }}
+                </a>
                 
                 <div v-if="res && !res.ok" class="alert alert-danger mt-3" role="alert">
                     {{ res.msg }}
