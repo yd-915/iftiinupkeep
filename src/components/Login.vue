@@ -33,6 +33,9 @@
                 <button class="w-100 btn btn-primary" type="submit" :disabled="processing">
                     {{ $t("Login") }}
                 </button>
+                <button class="w-100 btn btn-primary" type="submit" :disabled="processing">
+                    {{ $t("Sign Up") }}
+                </button>
                 
                 <div v-if="res && !res.ok" class="alert alert-danger mt-3" role="alert">
                     {{ res.msg }}
